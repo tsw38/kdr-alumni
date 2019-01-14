@@ -1,0 +1,35 @@
+.Sidebar {
+    .menu-sidebar-container {
+        margin-bottom: 2rem; 
+        ul {
+            border: 1px solid $LightGrey;            
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 2rem;
+        }
+
+        li {
+            &:not(:last-of-type) {
+                border-bottom: 1px solid $LightGrey;
+            }
+
+            a { 
+                background-color: transparent;
+
+                color: $Grey;
+                display: block;
+                padding: 1.5rem 2rem;
+                transition: color $transitionSpeed, background-color $transitionSpeed;
+
+                @include hover {
+                    &:hover {
+                        color: white;
+                        background-color: $Princeton;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import './randomFact';

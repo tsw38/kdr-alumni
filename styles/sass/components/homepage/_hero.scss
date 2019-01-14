@@ -1,0 +1,12 @@
+.Hero {
+    height:100%;
+    background-color:$Grey;
+    height:60rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+@import './countdown';
+@import './eventsNewsAck';

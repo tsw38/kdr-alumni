@@ -1,0 +1,78 @@
+.Countdown {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all $transitionSpeed;
+    box-shadow: 0.5rem 0 10px rgba(0,0,0,0.16);
+
+    .textContainer {
+        display: flex;
+        height: calc(100% - 2rem);
+        width: calc(100% - 4rem);
+        padding: 1rem 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(rgba(0,0,0,0) -15%, $Princeton 75%, darken($Princeton, 5%));
+
+        h2 {
+            font-size: 2.5rem;
+            color: $MiddleBerry;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: 0.1rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 2.5rem;
+            letter-spacing: 0.25rem;
+            text-align: center;
+        }
+
+        .description {
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            letter-spacing: 0.05rem;
+            line-height: 1.25;
+        }
+
+        .timer {
+            opacity: 1;
+            transition: all $transitionSpeed;
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            letter-spacing: 0.1rem;
+
+            &.hidden {
+                opacity: 0;
+            }
+
+            .digitWrapper {
+            }
+
+            .number {
+                font-size: 5rem;
+                color: $MiddleBerry;
+                font-weight: 700;
+                display: block;
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+
+            .time {
+                font-size: 3rem;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

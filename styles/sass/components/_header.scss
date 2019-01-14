@@ -1,0 +1,35 @@
+.Header {
+    height: 200px;
+    width: 100%;
+    max-height: 14.5rem;
+    background-color: white;
+    padding: 0.5rem 0;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.16);
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-column-gap: 0.5rem;
+    position:relative;
+    z-index:100;
+
+    .logo {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: calc(100% - 2rem);
+        padding: 1rem 0;
+        width: 100%;
+
+        a {
+            height: 100%;
+        }
+        
+        img {
+
+        }
+    }
+
+    .hamburger {
+
+    }
+}

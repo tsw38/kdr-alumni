@@ -1,0 +1,12 @@
+@import './globals/colors';
+@import './globals/variables';
+@import './globals/normalize';
+@import './globals/mixins';
+@import './globals/media-queries';
+@import './globals/global';
+
+@import './components/header';
+@import './components/sidebar';
+
+@import './components/homepage/hero';
+@import './components/homepage/body';

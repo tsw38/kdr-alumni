@@ -62,7 +62,12 @@
 										clearInterval(interval);
 									}
 
-									const days    = moment.duration(diff).days();
+									const daysInMonth = Array(moment.duration(diff).months()).fill().reduce((days, month, index) => {
+										days += moment().add(index+1, 'M').daysInMonth();
+										return days;
+									}, 0);
+
+									const days    = moment.duration(diff).days() + daysInMonth;
 									const hours   = moment.duration(diff).hours();
 									const minutes = moment.duration(diff).minutes();
 									const seconds = moment.duration(diff).seconds();

@@ -23,5 +23,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 				<p><?php echo(getRandomFact()); ?></p>
 			</div>
 		</div>
+
+		
 	</div>
 </aside><!-- #secondary -->

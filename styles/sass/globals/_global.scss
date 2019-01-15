@@ -10,6 +10,8 @@ html, body {
 a {
     opacity: 1;
     transition: opacity $transitionSpeed;
+    text-decoration: none;
+    color: $Grey;
 
     @include hover {
         &:hover {

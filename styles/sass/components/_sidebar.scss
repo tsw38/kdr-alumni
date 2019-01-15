@@ -23,6 +23,7 @@
 
                 @include hover {
                     &:hover {
+                        opacity: 1;
                         color: white;
                         background-color: $Princeton;
                     }

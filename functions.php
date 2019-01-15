@@ -136,13 +136,15 @@ add_action( 'wp_enqueue_scripts', 'kdr_beta_alumni_scripts' );
 
 
 /**
- * Implement the Custom Header feature.
+ * Implement the Custom Header feature and other theme things
  */
 require get_template_directory() . '/inc/custom-header.php';
 
 require get_template_directory() . '/functions-api.php';
 
 require get_template_directory() . '/helpers.php';
+
+require get_template_directory() . '/RandomFactPostType.php';
 
 /**
  * Custom template tags for this theme.

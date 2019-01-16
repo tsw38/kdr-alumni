@@ -11,6 +11,10 @@
     position:relative;
     z-index:100;
 
+    @include largeDesktopDown {
+        height: 10rem;
+    }
+
     .logo {
         display: grid;
         justify-content: center;
@@ -20,10 +24,40 @@
         padding: 1rem 0;
         width: 100%;
 
+        @include largeDesktopDown {
+            height: calc(100% - 1rem);
+            width: 100%;
+            padding: 0.5rem 0;
+        }
+
         a {
+            @include largeDesktopDown {
+                position: absolute;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
         }
         
         img {
+
+            @include largeDesktopDown {
+                display: block;
+                margin: 1.5rem auto;
+                border: none;
+                position: relative;
+                display: block;
+                height: calc(100% - 1rem);
+                padding: 0.5rem 0;
+                margin: 0 auto;
+            }
+
+            @include tabletDown {
+
+            }
+
         }
     }
 

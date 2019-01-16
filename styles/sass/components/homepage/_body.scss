@@ -1,16 +1,23 @@
 .Body {
     margin: 4rem auto;
-    max-width: 108rem;
     display: grid;
-    grid-template-columns: 73rem 33rem;
-    grid-column-gap: 2rem;
+    padding: 0 2rem;
+
+    @include smallDesktopUp {
+        grid-template-columns: 73rem 33rem;
+        grid-column-gap: 2rem;
+        max-width: 108rem;
+    }
 }
 
 
 .Article {
     border: 1px solid $LightGrey;
     padding: 2rem;
-    max-width: 69.5rem;
+
+    @include smallDesktopUp {
+        max-width: 69.5rem;
+    }
 
     &:not(:last-of-type){
         margin-bottom: 2rem;
@@ -31,9 +38,9 @@
     &-image {
         padding-top: 27rem;
         width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
         background: $LightGrey;
     }
 
@@ -44,7 +51,14 @@
         display: grid;
         grid-template-rows: 92% 8%;
 
+        @include tabletDown {
+            font-size: 1.25rem;
+            line-height: 1.25;
+        }
+
         .viewMore {
+            display: grid;
+            align-items: center;
             text-align: right;
             text-transform: uppercase;
         }

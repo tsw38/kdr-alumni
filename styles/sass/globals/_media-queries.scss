@@ -11,13 +11,37 @@
 }
 
 @mixin tablet {
-    @media (min-width: #{$tabletWidth}) and (max-width: #{$desktopWidth - 1px}) {
+    @media (min-width: #{$tabletWidth}) and (max-width: #{$smallDesktopWidth - 1px}) {
         @content;
     }
 }
 
-@mixin desktop {
-    @media (min-width: #{$desktopWidth}) {
+@mixin tabletDown {
+    @media (max-width: #{$smallDesktopWidth - 1px}) {
+        @content;
+    }
+}
+
+@mixin smallDesktopUp {
+    @media (min-width: #{$smallDesktopWidth}){
+        @content;
+    }
+}
+
+@mixin smallDesktop {
+    @media (min-width: #{$smallDesktopWidth}) and (max-width: #{$largeDesktopWidth - 1px}) {
+        @content;
+    }
+}
+
+@mixin largeDesktopDown {
+    @media (max-width: #{$largeDesktopWidth}){
+        @content;
+    }
+}
+
+@mixin largeDesktop {
+    @media (min-width: #{$largeDesktopWidth}) {
         @content;
     }
 }

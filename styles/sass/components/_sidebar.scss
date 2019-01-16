@@ -1,4 +1,8 @@
 .Sidebar {
+    @include tabletDown {
+        display: none;
+    }
+    
     .menu-sidebar-container {
         margin-bottom: 2rem; 
         ul {

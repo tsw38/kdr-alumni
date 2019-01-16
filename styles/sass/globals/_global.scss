@@ -5,6 +5,10 @@ html, body {
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.1rem;
     color: $Grey;
+
+    @include smallDesktop {
+        font-size: $fontSize - 2px;
+    }
 }
 
 a {
@@ -33,6 +37,10 @@ a {
     height: 0.5rem; 
     background-color: $MiddleBerry;
     margin-bottom: 4rem;
+
+    @include tabletDown {
+        margin-bottom: 3rem;
+    }
 }
 
 

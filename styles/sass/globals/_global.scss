@@ -12,6 +12,10 @@ html, body {
     }
 }
 
+*::selection {
+    background: $Princeton;
+}
+
 a {
     opacity: 1;
     transition: opacity $transitionSpeed;

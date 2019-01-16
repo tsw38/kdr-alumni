@@ -5,20 +5,22 @@ var currentFontSize;
 
 // window.resize callback function
 function setBodyFont() {
-    if(window.innerWidth >= shrinkDimension && typeof currentFontSize !== undefined) {
-        currentFontSize = undefined;
-
-        Array.from(document.querySelectorAll('html, body')).forEach(function(node, index) {
-            node.style.fontSize = '';
-        });
-    }
-
-    if(window.innerWidth < shrinkDimension) {
-        currentFontSize = (maxFontSize/shrinkDimension) * window.innerWidth;
-        Array.from(document.querySelectorAll('html, body')).forEach(function(node, index) {
-            node.style.fontSize = currentFontSize + 'px';
-        });
-    }
+    setTimeout(function(){
+        if(window.innerWidth >= shrinkDimension && typeof currentFontSize !== undefined) {
+            currentFontSize = undefined;
+    
+            Array.from(document.querySelectorAll('html, body')).forEach(function(node, index) {
+                node.style.fontSize = '';
+            });
+        }
+    
+        if(window.innerWidth < shrinkDimension) {
+            currentFontSize = (maxFontSize/shrinkDimension) * window.innerWidth;
+            Array.from(document.querySelectorAll('html, body')).forEach(function(node, index) {
+                node.style.fontSize = currentFontSize + 'px';
+            });
+        }
+    }, 0);
 }
 
 // window.resize event listener

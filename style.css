@@ -68,6 +68,10 @@ html, body {
   }
 }
 
+*::selection {
+  background: #e68a17;
+}
+
 a {
   opacity: 1;
   transition: opacity 350ms ease;

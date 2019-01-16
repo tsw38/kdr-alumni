@@ -5,6 +5,7 @@ html, body {
     font-family: 'Lato', sans-serif;
     letter-spacing: 0.1rem;
     color: $Grey;
+    transition: font-size 250ms ease;
 
     @include smallDesktop {
         font-size: $fontSize - 2px;

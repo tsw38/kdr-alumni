@@ -128,6 +128,8 @@ function kdr_beta_alumni_scripts() {
 
 	wp_enqueue_script( 'momentjs', get_template_directory_uri() . '/js/moment.js', array(), '20151215', true );
 
+	wp_enqueue_script( 'resize', get_template_directory_uri() . '/js/resize.js', array(), '20151215', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

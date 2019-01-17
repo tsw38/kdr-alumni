@@ -104,6 +104,11 @@ a {
   }
 }
 
+.Sticky {
+  position: sticky;
+  top: 2rem;
+}
+
 .row {
   display: grid;
 }
@@ -546,4 +551,8 @@ a {
   align-items: center;
   text-align: right;
   text-transform: uppercase;
+}
+
+.admin-bar .Sticky {
+  top: 6rem;
 }

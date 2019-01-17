@@ -99,8 +99,9 @@
         echo('<div class="Article">
             <h5 class="Article-title">'.$article['post_title'].'</h5>
             <div class="row">
-                <div class="Article-image" style="background-image: url('.get_the_post_thumbnail_url($article['ID']).'); ">
-                </div>
+                <a href="' . $article["guid"] . '">
+                    <div class="Article-image" style="background-image: url('.get_the_post_thumbnail_url($article['ID']).'); "></div>
+                </a>
                 <div class="Article-description">
                     <div>'
                         . get_fields($article['ID'])['brief_description'] .

@@ -13,17 +13,19 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside class="Sidebar">
-	<?php wp_nav_menu( 'sidebar' ); ?>
-	<div class="RandomFact">
-		<div class="RandomFact-image" style="background-image: url(<?php echo(getFeaturedImages()); ?>);">
-		</div>
-		<div class="RandomFact-text">
-			<div class="content">
-				<h5>Random Fact</h5>
-				<p><?php echo(getRandomFact()); ?></p>
+	<div class="Sticky">
+		<?php wp_nav_menu( 'sidebar' ); ?>
+		<div class="RandomFact">
+			<div class="RandomFact-image" style="background-image: url(<?php echo(getFeaturedImages()); ?>);">
 			</div>
-		</div>
+			<div class="RandomFact-text">
+				<div class="content">
+					<h5>Random Fact</h5>
+					<p><?php echo(getRandomFact()); ?></p>
+				</div>
+			</div>
 
-		
+			
+		</div>
 	</div>
 </aside><!-- #secondary -->

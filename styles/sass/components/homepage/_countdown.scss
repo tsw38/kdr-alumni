@@ -7,9 +7,9 @@
 
     .textContainer {
         display: flex;
-        height: calc(100% - 2rem);
+        height: calc(100% - 4rem);
         width: calc(100% - 4rem);
-        padding: 1rem 2rem;
+        padding: 2rem;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -19,6 +19,7 @@
             padding-top: 6rem;
             padding-bottom: 6rem;
             height: auto;
+            background: rgba($Princeton, 0.75);
         }
 
         h2 {
@@ -60,7 +61,7 @@
 
             @include tabletDown {
                 font-size: 2rem;
-                line-height: 1;
+                line-height: 1.2;
                 margin-bottom: 3rem;
             }
         }
